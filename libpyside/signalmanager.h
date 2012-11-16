@@ -30,7 +30,7 @@
 #include <QMetaMethod>
 #include <QMetaType>
 
-class QObject;
+class QT_PREPEND_NAMESPACE(QObject);
 
 namespace PySide
 {

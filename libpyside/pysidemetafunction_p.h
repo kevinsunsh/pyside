@@ -27,7 +27,7 @@
 #include <QList>
 #include <QByteArray>
 
-class QObject;
+QT_FORWARD_DECLARE_CLASS(QObject)
 
 namespace PySide { namespace MetaFunction {
 

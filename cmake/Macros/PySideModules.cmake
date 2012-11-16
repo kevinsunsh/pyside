@@ -90,6 +90,7 @@ macro(check_qt_class module class optional_source_files dropped_entries)
         endif ()
         set(SRC_FILE ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/CMakeTmp/test${class}.cxx)
         file(WRITE ${SRC_FILE}
+             "#include <QtCore/qglobal.h>\n"
              "#include <${include_file}>\n"
              "${NAMESPACE_USE}\n"
              "int main() { sizeof(${class}); }\n"

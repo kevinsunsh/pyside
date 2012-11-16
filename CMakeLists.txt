@@ -10,6 +10,10 @@ find_package(Qt4 4.5.0 REQUIRED)
 find_file(GL_H "gl.h" PATH_SUFFIXES "GL")
 include(FindQt4Extra)
 
+if(QT_NAMESPACE)
+    add_definitions(-DQT_NAMESPACE=${QT_NAMESPACE})
+endif()
+
 set(XVFB_EXEC "")
 option(USE_XVFB "Uses xvfb-run with the unit tests to avoid QtGui tests popping windows on the screen." FALSE)
 if(USE_XVFB)

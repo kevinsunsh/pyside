@@ -4,6 +4,8 @@
 #include <QObject>
 #include <phonon/backendcapabilities.h>
 
+QT_BEGIN_NAMESPACE
+
 namespace Phonon
 {
 namespace BackendCapabilities
@@ -35,5 +37,7 @@ namespace BackendCapabilities
     };
 }
 }
+
+QT_END_NAMESPACE
 
 #endif
